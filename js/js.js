@@ -5,13 +5,13 @@ var x1, x2;
 var a = parseInt(prompt ('Please enter A', ''), 10);
 var b = parseInt(prompt ('Please enter B', ''), 10);
 var c = parseInt(prompt ('Please enter C', ''), 10);
-var d = b * b - 4 * a * c;
+var d = b * b - ( 4 * a * c );
     if ( d > 0 ) {
-        x1 = -b + Math.sqrt(d) / ( 2 * a );
-        x2 = -b - Math.sqrt(d) / ( 2 * a );
+        x1 = ( -b + Math.sqrt(d) ) / ( 2 * a );
+        x2 = ( -b - Math.sqrt(d) ) / ( 2 * a );
     }
     else if ( d == 0 ) {
-        x1 = x2 = -b + Math.sqrt(d) / ( 2 * a );
+        x1 = x2 = (-b + Math.sqrt(d) ) / ( 2 * a );
     }
     else {
         x1 = 'There equation has';
